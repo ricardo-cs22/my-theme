@@ -1,4 +1,4 @@
-# thema_seu_amigo
+# my_thema
 
 A new Flutter project.
 
