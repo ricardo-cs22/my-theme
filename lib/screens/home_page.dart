@@ -11,11 +11,19 @@ class HomePage extends StatelessWidget {
   final List<Map<String, dynamic>> imgList = [
     {
       'url':
-          'https://cdn.discordapp.com/attachments/1176930235019698359/1179147484174487553/pantanal151.jpg?ex=664a582b&is=664906ab&hm=8eeea37d330ce170d59fc7592cf950a964445dd079eaa968ec7d712b2bf9dc42&',
+          'https://media.discordapp.net/attachments/1176930235019698359/1179147420844691476/Parque-Nacional-do-Pantanal-Matogrossense.jpg?ex=664cfb1c&is=664ba99c&hm=8a9dff3a2683952c244b5e0ebb1b79159b32e650563c1533f46e83e41b41d2f8&=&format=webp&width=701&height=468',
       'rating': 4.0
     },
-    {'url': 'https://via.placeholder.com/600/771796', 'rating': 3.5},
-    {'url': 'https://via.placeholder.com/600/24f355', 'rating': 5.0},
+    {
+      'url':
+          'https://discord.com/channels/1173024595536785408/1176930235019698359/1179147484732342392',
+      'rating': 3.5
+    },
+    {
+      'url':
+          'https://media.discordapp.net/attachments/1176930235019698359/1179129509119807569/Imagem4.png?ex=664cea6e&is=664b98ee&hm=4f69f7e08b2effade650917cf048bb711e3bc37217ee2b316ff99b0cb968ef36&=&format=webp&quality=lossless&width=550&height=309',
+      'rating': 5.0
+    },
     {'url': 'https://via.placeholder.com/600/d32776', 'rating': 4.5},
     {'url': 'https://via.placeholder.com/600/f66b97', 'rating': 4.0},
     {'url': 'https://via.placeholder.com/600/56a8c2', 'rating': 3.0},

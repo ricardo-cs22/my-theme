@@ -43,7 +43,7 @@ class DrawerList extends StatelessWidget {
         children: [
           DrawerHeader(
             decoration: BoxDecoration(
-              color: Colors.blue,
+              color: themeChanger.backgroundColor,
             ),
             child: Text(
               'Opções',
