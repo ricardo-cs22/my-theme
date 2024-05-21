@@ -1,4 +1,4 @@
-# my_thema
+# my_theme
 
 A new Flutter project.
 
