@@ -11,22 +11,34 @@ class HomePage extends StatelessWidget {
   final List<Map<String, dynamic>> imgList = [
     {
       'url':
-          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/samurai.jpg',
-      'rating': 4.0
+          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/t2.jpg?raw=true',
+      'rating': 1.0
     },
     {
       'url':
-          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/n22.jpg',
+          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/n22.jpg?raw=true',
       'rating': 3.5
     },
     {
       'url':
-          'https://media.discordapp.net/attachments/1176930235019698359/1179129509119807569/Imagem4.png?ex=664cea6e&is=664b98ee&hm=4f69f7e08b2effade650917cf048bb711e3bc37217ee2b316ff99b0cb968ef36&=&format=webp&quality=lossless&width=550&height=309',
+          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/carro.jpg?raw=true',
       'rating': 5.0
     },
-    {'url': 'https://via.placeholder.com/600/d32776', 'rating': 4.5},
-    {'url': 'https://via.placeholder.com/600/f66b97', 'rating': 4.0},
-    {'url': 'https://via.placeholder.com/600/56a8c2', 'rating': 3.0},
+    {
+      'url':
+          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/na.jpg?raw=true',
+      'rating': 4.5
+    },
+    {
+      'url':
+          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/t3.jpg?raw=true',
+      'rating': 4.0
+    },
+    {
+      'url':
+          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/samurai.jpg?raw=true',
+      'rating': 3.0
+    },
   ];
 
   @override
@@ -41,7 +53,7 @@ class HomePage extends StatelessWidget {
           children: [
             Icon(Icons.search, color: themeChanger.iconColor),
             Container(
-              width: 200,
+              width: 170,
               child: TextField(
                 decoration: InputDecoration(
                   hintText: 'Search',
@@ -121,7 +133,7 @@ class HomePage extends StatelessWidget {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10.0),
                               child: Image.network(
-                                'https://via.placeholder.com/200',
+                                'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/elden_ring.jpg?raw=true',
                                 fit: BoxFit.cover,
                                 height: 250,
                                 width: 160,
@@ -162,7 +174,7 @@ class HomePage extends StatelessWidget {
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10.0),
                               child: Image.network(
-                                'https://via.placeholder.com/200',
+                                'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/bd.jpg?raw=true',
                                 fit: BoxFit.cover,
                                 height: 250,
                                 width: 160,
