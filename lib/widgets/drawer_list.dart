@@ -53,37 +53,57 @@ class DrawerList extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
-            title: Text('Cor do Background'),
-            onTap: () {
-              _openColorPicker(context, themeChanger.changeBackgroundColor);
-            },
+          _buildListButton(
+            context,
+            'Cor do Background',
+            () => _openColorPicker(context, themeChanger.changeBackgroundColor),
           ),
-          ListTile(
-            title: Text('Cor dos Ícones'),
-            onTap: () {
-              _openColorPicker(context, themeChanger.changeIconColor);
-            },
+          _buildListButton(
+            context,
+            'Cor dos Ícones',
+            () => _openColorPicker(context, themeChanger.changeIconColor),
           ),
-          ListTile(
-            title: Text('Cor do Texto'),
-            onTap: () {
-              _openColorPicker(context, themeChanger.changeTextColor);
-            },
+          _buildListButton(
+            context,
+            'Cor do Texto',
+            () => _openColorPicker(context, themeChanger.changeTextColor),
           ),
-          ListTile(
-            title: Text('Cor da Barra Inferior'),
-            onTap: () {
-              _openColorPicker(context, themeChanger.changeBottomNavBarColor);
-            },
+          _buildListButton(
+            context,
+            'Cor da Barra Inferior',
+            () =>
+                _openColorPicker(context, themeChanger.changeBottomNavBarColor),
           ),
-          ListTile(
-            title: Text('Compartilhar Cores do Tema'),
-            onTap: () {
-              themeChanger.shareThemeColors();
-            },
+          _buildListButton(
+            context,
+            'Compartilhar Cores do Tema',
+            () => themeChanger.shareThemeColors(),
           ),
         ],
+      ),
+    );
+  }
+
+  Widget _buildListButton(
+      BuildContext context, String title, VoidCallback onTap) {
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
+      child: InkWell(
+        onTap: onTap,
+        borderRadius: BorderRadius.circular(20.0),
+        child: Container(
+          padding: EdgeInsets.all(16.0),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20.0),
+            color: Theme.of(context).primaryColor.withOpacity(0.1),
+          ),
+          child: Text(
+            title,
+            style: TextStyle(
+              fontSize: 16.0,
+            ),
+          ),
+        ),
       ),
     );
   }
