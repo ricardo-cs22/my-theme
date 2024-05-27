@@ -8,37 +8,15 @@ import '../widgets/drawer_list.dart';
 
 // ignore: use_key_in_widget_constructors
 class HomePage extends StatelessWidget {
-  final List<Map<String, dynamic>> imgList = [
-    {
-      'url':
-          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/t2.jpg?raw=true',
-      'rating': 1.0
-    },
-    {
-      'url':
-          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/n22.jpg?raw=true',
-      'rating': 3.5
-    },
-    {
-      'url':
-          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/carro.jpg?raw=true',
-      'rating': 5.0
-    },
-    {
-      'url':
-          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/na.jpg?raw=true',
-      'rating': 4.5
-    },
-    {
-      'url':
-          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/t3.jpg?raw=true',
-      'rating': 4.0
-    },
-    {
-      'url':
-          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/samurai.jpg?raw=true',
-      'rating': 3.0
-    },
+  final List<String> imgList = [
+    'assets/images/bd.jpg',
+    'assets/images/carro.jpg',
+    'assets/images/elden_ring.jpg',
+    'assets/images/n22.jpg',
+    'assets/images/na.jpg',
+    'assets/images/samurai.jpg',
+    'assets/images/t2.jpg',
+    'assets/images/t3.jpg',
   ];
 
   @override
@@ -89,12 +67,12 @@ class HomePage extends StatelessWidget {
                   enableInfiniteScroll: true,
                   viewportFraction: 0.8,
                 ),
-                items: imgList.map((item) {
+                items: imgList.map((path) {
                   return Container(
                     child: ClipRRect(
                       borderRadius: BorderRadius.circular(10.0),
-                      child: Image.network(
-                        item['url'],
+                      child: Image.asset(
+                        path,
                         fit: BoxFit.cover,
                         width: 1000,
                       ),
