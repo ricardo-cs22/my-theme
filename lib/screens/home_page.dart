@@ -11,12 +11,12 @@ class HomePage extends StatelessWidget {
   final List<Map<String, dynamic>> imgList = [
     {
       'url':
-          'https://media.discordapp.net/attachments/1176930235019698359/1179147420844691476/Parque-Nacional-do-Pantanal-Matogrossense.jpg?ex=664cfb1c&is=664ba99c&hm=8a9dff3a2683952c244b5e0ebb1b79159b32e650563c1533f46e83e41b41d2f8&=&format=webp&width=701&height=468',
+          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/samurai.jpg',
       'rating': 4.0
     },
     {
       'url':
-          'https://discord.com/channels/1173024595536785408/1176930235019698359/1179147484732342392',
+          'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/n22.jpg',
       'rating': 3.5
     },
     {
