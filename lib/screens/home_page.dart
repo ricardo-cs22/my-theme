@@ -110,8 +110,8 @@ class HomePage extends StatelessWidget {
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10.0),
-                              child: Image.network(
-                                'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/elden_ring.jpg?raw=true',
+                              child: Image.asset(
+                                'assets/images/t3.jpg',
                                 fit: BoxFit.cover,
                                 height: 250,
                                 width: 160,
@@ -151,8 +151,8 @@ class HomePage extends StatelessWidget {
                             ),
                             child: ClipRRect(
                               borderRadius: BorderRadius.circular(10.0),
-                              child: Image.network(
-                                'https://github.com/ricardo-cs22/my-theme/blob/main/lib/assets/images/bd.jpg?raw=true',
+                              child: Image.asset(
+                                'assets/images/elden_ring.jpg',
                                 fit: BoxFit.cover,
                                 height: 250,
                                 width: 160,
