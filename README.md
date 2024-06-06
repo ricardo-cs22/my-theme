@@ -1,6 +1,7 @@
 # my_theme
 
-A new Flutter project.
+Meu mais novo projeto em Flutter  Mytheme foi desenvolvido com o objetivo de facilitar a realização de testes em layouts específicos de software. 
+Sua finalidade é auxiliar designers e programadores na verificação da compatibilidade de seus temas, além de proporcionar uma plataforma para o compartilhamento entre os profissionais da área.
 
 ## Getting Started
 
